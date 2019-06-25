@@ -15,92 +15,92 @@
                 <div class="form-group">
                   <label for="q1">Example select</label>
                   <select class="form-control" id="q1">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
                   </select>
                 <div class="form-group">
                   <label for="q2">Example select</label>
                   <select class="form-control" id="q2">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
                   </select>
                 <div class="form-group">
                   <label for="q3">Example select</label>
                   <select class="form-control" id="q3">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
                   </select>
                 <div class="form-group">
                   <label for="q4">Example select</label>
                   <select class="form-control" id="q4">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
                   </select>
                 <div class="form-group">
                   <label for="q5">Example select</label>
                   <select class="form-control" id="q5">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
                   </select>
                 <div class="form-group">
                   <label for="q6">Example select</label>
                   <select class="form-control" id="q6">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
                   </select>
                 <div class="form-group">
                   <label for="q7">Example select</label>
                   <select class="form-control" id="q7">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
                   </select>
                 <div class="form-group">
                   <label for="q8">Example select</label>
                   <select class="form-control" id="q8">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
                   </select>
                 <div class="form-group">
                   <label for="q9">Example select</label>
                   <select class="form-control" id="q9">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
                   </select>
                 <div class="form-group">
                   <label for="q10">Example select</label>
                   <select class="form-control" id="q10">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
                   </select>
                 </div>
                 
@@ -113,12 +113,12 @@
 
               <script type="text/javascript">
               
-                
+                var match = require("../../survey")
 
               $("#submit").on("click", function(event) {
                 event.preventDefault();
 
-                var user = {
+                var newUser = {
                     name: $("#name").val(),
                     survey: [
                     $("#q1").val(),
@@ -134,15 +134,22 @@
                     ]
                 }
 
+                console.log("newestUser" + newUser)
+
                 $.post("/api/friends",newUser, function(data){
 
-                alert("Thank you for completing the survey");
                 });
+                
+                console.log(match)
+                alert("Thank you for completing the survey");
+                
+              
 
 
             });
               
-              
+
+            
               </script>
 </body>
 </html>
